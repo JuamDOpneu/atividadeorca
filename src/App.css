@@ -1,0 +1,129 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#root {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;          
+  padding: 2rem;
+  box-sizing: border-box; 
+}
+
+.quadro-orcamento {
+  width: 700px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.quadro-orcamento h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  flex-grow: 1; 
+}
+
+/* input[type="number"] filtra os input pelo tipo dele */
+.input-container input[type="number"] {
+  width: 80px;
+  flex-grow: 0; 
+}
+
+
+.adicionar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+  text-align: center;
+
+}
+
+.adicionar:hover {
+  background-color: #218838;
+  text-align: center;
+  padding: auto;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd; 
+  color: #000000;
+}
+
+thead th {
+  background-color: #c3c2c2;
+  font-weight: 600;
+  color: #000000;
+}
+/* :nth-of-type()  ele seleciona um enésio elemento de um tipo específico de um elemento pai no caso osa tr
+e o even é usado para ele selecionar apenas os pares pulando um e dando o efeito de zebra */
+tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.quantidade, .valor-unitario, .total {
+  text-align: right;
+}
+
+.acoes {
+  text-align: center;
+}
+
+.excluir {
+  background-color: #dc3545;
+  color: #ffffff;
+  text-shadow: #000000;
+  border-radius: 8px;
+  width: 55px;
+  height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.excluir:hover {
+  background-color: #c82333;
+}
+
+tfoot th {
+  padding: 16px;
+  text-align: right;
+  background-color: #c5e9ce; 
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: none;
+} 
